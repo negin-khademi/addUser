@@ -1,0 +1,19 @@
+ <form>
+    <div class="row">
+      <div class="form-group col-md-6">
+      <label for="exampleInputEmail1">Email</label>
+      <input #userEmail type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="exampleInputPassword1">Password</label>
+      <input #userPassword type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+      <label class="form-check-label" for="exampleCheck1">Address</label>
+      <input #userAddress type="test" class="form-control" id="exampleCheck1">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary w-25 mt-4" (click)="addNewUser(userEmail.value,userPassword.value,userAddress.value,$event)">Add Users</button>
+    </div>
+    </div>
+  </form>
